@@ -1,0 +1,9 @@
+@each $colourName, $colourValue in $colours {
+  :where(.text-#{$colourName}) {
+    color: $colourValue;
+  }
+
+  :where(.bg-#{$colourName}) {
+    background-color: $colourValue;
+  }
+}

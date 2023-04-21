@@ -1,0 +1,26 @@
+{
+  "name": "omni.css",
+  "version": "1.0.0",
+  "description": "OmniCSS, tüm ihtiyaçlarınızı kapsayan ve her türlü tasarım sorununu çözebilen kapsamlı bir CSS framework'üdür. Bu framework, modern web tasarım trendleriyle uyumlu ve tamamen özelleştirilebilir bileşenleri içerir. Responsive tasarım, grid sistemi, font ve renk seçenekleri, animasyonlar, ikonlar ve daha birçok özellik, OmniCSS ile sunulmaktadır. Ayrıca, framework'ün kullanımı kolaydır ve hızlı bir şekilde başlamak için örnekler içerir. Tasarım iş akışınızı hızlandırmak için OmniCSS kullanın ve projelerinizi daha kolay ve daha hızlı bir şekilde hayata geçirin!",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel *.html",
+    "build": "parcel build *.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furkanesenn/omni.css.git"
+  },
+  "author": "Furkan Esen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/furkanesenn/omni.css/issues"
+  },
+  "homepage": "https://github.com/furkanesenn/omni.css#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "core-js": "^3.29.1",
+    "parcel": "^2.8.3",
+    "regenerator-runtime": "^0.13.11"
+  }
+}
