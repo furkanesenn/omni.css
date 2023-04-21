@@ -1,2 +1,2 @@
 # omni.css
-OmniCSS, tüm tasarım sorunlarını çözen özelleştirilebilir bileşenleri ve modern tasarım trendleriyle uyumlu bir CSS framework'üdür.
+OmniCSS, tüm ihtiyaçlarınızı kapsayan ve her türlü tasarım sorununu çözebilen kapsamlı bir CSS framework'üdür. Bu framework, modern web tasarım trendleriyle uyumlu ve tamamen özelleştirilebilir bileşenleri içerir. Responsive tasarım, grid sistemi, font ve renk seçenekleri, animasyonlar, ikonlar ve daha birçok özellik, OmniCSS ile sunulmaktadır. Ayrıca, framework'ün kullanımı kolaydır ve hızlı bir şekilde başlamak için örnekler içerir. Tasarım iş akışınızı hızlandırmak için OmniCSS kullanın ve projelerinizi daha kolay ve daha hızlı bir şekilde hayata geçirin!
