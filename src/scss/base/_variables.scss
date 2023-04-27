@@ -1,23 +1,214 @@
-$colours: (
-  "dark": #121212,
-  "light": #fafafa,
+$spacings: (
+  "sm": 0.5rem,
+  "md": 1rem,
+  "lg": 1.5rem,
+  "xl": 2rem,
+  "xxl": 2.5rem,
+  "xxxl": 3rem,
+  "xxxxl": 3.5rem,
+  "huge": 4rem,
+  "x-huge": 4.5rem,
+  "xx-huge": 5rem,
 );
 
-$fonts: (
-  "font-size": (
-    "prefix": "fs",
-    "xxxs": 0.5rem,
-    "xxs": 0.7rem,
-    "xs": 0.9rem,
-    "sm": 1.2rem,
-    "md": 1.6rem,
-    "lg": 2rem,
-    "xl": 2.5rem,
-    "xxl": 3.125rem,
-    "xxxl": 3.906rem,
-    "xxxxl": 4.882rem,
-    "huge": 6.103rem,
-    "x-huge": 7.629rem,
-    "xx-huge": 9.537rem,
+$config: (
+  "text-colours": (
+    "color": (
+      "prefix": "text",
+      "dark": #121212,
+      "light": #fafafa,
+    ),
+  ),
+  "background-colours": (
+    "background-color": (
+      "prefix": "bg",
+      "dark": #121212,
+      "light": #fafafa,
+    ),
+  ),
+  "layers": (
+    "z-index": (
+      "prefix": "zi",
+      "n5": -50,
+      "n4": -40,
+      "n3": -30,
+      "n2": -20,
+      "n1": -10,
+      "0": 0,
+      "1": 10,
+      "2": 20,
+      "3": 30,
+      "4": 40,
+      "5": 50,
+    ),
+  ),
+  "spacings": (
+    "margin":
+      map-merge(
+        (
+          "prefix": "m",
+        ),
+        $spacings
+      ),
+    "margin-block-end":
+      map-merge(
+        (
+          "prefix": "mb",
+        ),
+        $spacings
+      ),
+    "margin-block-start":
+      map-merge(
+        (
+          "prefix": "mt",
+        ),
+        $spacings
+      ),
+    "margin-inline-start":
+      map-merge(
+        (
+          "prefix": "ml",
+        ),
+        $spacings
+      ),
+    "margin-inline-end":
+      map-merge(
+        (
+          "prefix": "mr",
+        ),
+        $spacings
+      ),
+    "padding":
+      map-merge(
+        (
+          "prefix": "p",
+        ),
+        $spacings
+      ),
+    "padding-block-end":
+      map-merge(
+        (
+          "prefix": "pb",
+        ),
+        $spacings
+      ),
+    "padding-block-start":
+      map-merge(
+        (
+          "prefix": "pt",
+        ),
+        $spacings
+      ),
+    "padding-inline-start":
+      map-merge(
+        (
+          "prefix": "pl",
+        ),
+        $spacings
+      ),
+    "padding-inline-end":
+      map-merge(
+        (
+          "prefix": "pr",
+        ),
+        $spacings
+      ),
+  ),
+  "displays": (
+    "display": (
+      "prefix": "d",
+      "block": block,
+      "inline": inline,
+      "inline-block": inline-block,
+      "flex": flex,
+      "inline-flex": inline-flex,
+      "grid": grid,
+      "inline-grid": inline-grid,
+      "table": table,
+      "table-row": table-row,
+      "table-cell": table-cell,
+      "none": none,
+    ),
+  ),
+  "visibilities": (
+    "visibility": (
+      "prefix": "v",
+      "visible": visible,
+      "hidden": hidden,
+    ),
+  ),
+  "positions": (
+    "position": (
+      "prefix": "pos",
+      "static": static,
+      "relative": relative,
+      "absolute": absolute,
+      "fixed": fixed,
+      "sticky": sticky,
+    ),
+  ),
+  "floats": (
+    "float": (
+      "prefix": "float",
+      "start": start,
+      "end": end,
+      "none": none,
+    ),
+  ),
+  "clears": (
+    "clear": (
+      "prefix": "clear",
+      "start": start,
+      "end": end,
+      "both": both,
+      "none": none,
+    ),
+  ),
+  "overflows": (
+    "overflow": (
+      "prefix": "overflow",
+      "visible": visible,
+      "hidden": hidden,
+      "scroll": scroll,
+      "auto": auto,
+    ),
+  ),
+  "flexbox": (),
+  "grid": (),
+  "fonts": (
+    "font-size": (
+      "prefix": "fs",
+      "xxxs": 0.5rem,
+      "xxs": 0.7rem,
+      "xs": 0.9rem,
+      "sm": 1.2rem,
+      "md": 1.6rem,
+      "lg": 2rem,
+      "xl": 2.5rem,
+      "xxl": 3.125rem,
+      "xxxl": 3.906rem,
+      "xxxxl": 4.882rem,
+      "huge": 6.103rem,
+      "x-huge": 7.629rem,
+      "xx-huge": 9.537rem,
+    ),
+    "font-weight": (
+      "prefix": "fw",
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "bold": 700,
+    ),
+    "font-style": (
+      "prefix": "fst",
+      "normal": normal,
+      "italic": italic,
+    ),
+    "font-family": (
+      "prefix": "ff",
+      "sans-serif": "Roboto, sans-serif",
+      "serif": "Merriweather, serif",
+      "monospace": "Roboto Mono, monospace",
+    ),
   ),
 );

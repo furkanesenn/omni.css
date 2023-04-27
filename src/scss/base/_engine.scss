@@ -1,0 +1,16 @@
+@each $configKey, $configVal in $config {
+  // text-colours, bg-colours, fonts
+  @each $configCategoryKey, $configCategoryValue in $configVal {
+    // color, background-color, font-size, font-weight, font-style, font-family
+    @each $configItemKey, $configItemValue in $configCategoryValue {
+      // prefix, dark, light, xxxs, xxs, xs, sm, md, lg, xl, xxl, xxxl, xxxxl, huge, x-huge, xx-huge, light, regular, medium, bold, normal, italic, sans-serif, serif, monospace
+      // Burada döngünün yalnızca gerçek font değerlerini almasını sağlıyoruz.
+      @if $configItemKey != "prefix" {
+        :where(.#{map-get($configCategoryValue, "prefix")}-#{$configItemKey}) {
+          // fs-xxxs
+          #{$configCategoryKey}: $configItemValue !important; // font-size: 0.5rem;
+        }
+      }
+    }
+  }
+}
